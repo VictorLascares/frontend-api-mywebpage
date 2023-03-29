@@ -5,14 +5,14 @@ import { Footer } from "../components/Footer";
 
 export const Layout = () => {
     return (
-        <>
+        <div className="h-screen grid grid-rows-[auto_1fr_auto]">
             <Header /> 
 
-            <main>
+            <main className="min-h-min">
                 <Outlet />
             </main>
 
             <Footer />
-        </>
+        </div>
     );
 };
